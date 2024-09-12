@@ -79,3 +79,14 @@ console.log(members.forEach(({ name, age }) => console.log(`${name} :: ${age}`))
 
 // 12 
 console.log(_.map(memberss, ({ name: testname, age }) => ({ age, testname })));
+
+// 13 
+const updatedMembers = _.map(members, member => {
+    return { ...member, age: member.age + 1 };
+});
+
+console.log(updatedMembers)
+
+// 14 
+const totalAge = _.reduce(members, (acc, member) => acc + member.age, 0);
+console.log(totalAge)
