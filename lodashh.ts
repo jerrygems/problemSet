@@ -66,7 +66,7 @@ console.log(newarr)
 // 10 extract properties of object using destructuring 
 console.log(members.forEach(({ name, age }) => console.log(`${name} :: ${age}`)))
 
-// 11 
+// 11 remaining
 // var js_object = members.map((obj) => {
 //     obj["testname"] = obj["name"]
 //     delete obj["name"]
