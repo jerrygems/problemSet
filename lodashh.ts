@@ -54,14 +54,10 @@ var members = _.concat(_.slice(memberss, 0, 2), [newMember], _.slice(memberss, 2
 console.log(members)
 
 // 8 extract first and second element
-// var f1name = ""
-// var f1age = ""
-// var f2name = ""
-// var f2age = ""
-// var [,{f1name, f1age }] = memberss[0]
-// var [,{f2name, f2age }] = memberss[1]
+var { name: f1name, age: f1age } = memberss[0];
+var { name: f2name, age: f2age } = memberss[1];
 
-// console.log(f1name,f2name,f1age,f2age)
+console.log(f1name, f2name, f1age, f2age);
 
 // 9 create a new array adding a new memb at 0
 var newarr = [77,...ages]
