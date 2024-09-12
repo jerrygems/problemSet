@@ -90,21 +90,9 @@ var js_object = members.map((obj) => {
 // 12 destructure any property of an object and use spread operator to get remaining properties in an object
 members.map(({testname,age})=>({age,...testname}))
 
-// 13 copying with the help of spread operator and override the json obj
-var testt = {...members}
+// 13 a one liner 
+var testt = members.map(members=> { return {...members,age:members.age+1} })
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 14 reduce array and object
+members.reduce((acc,member)=>acc+member.age,0)
+Ages.reduce((acc,cv)=>cv+acc,0)
