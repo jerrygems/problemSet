@@ -63,5 +63,19 @@ console.log(members)
 
 // console.log(f1name,f2name,f1age,f2age)
 
+// 9 create a new array adding a new memb at 0
+var newarr = [77,...ages]
+console.log(newarr)
 
-// 9 
+// 10 extract properties of object using destructuring 
+console.log(members.forEach(({ name, age }) => console.log(`${name} :: ${age}`)))
+
+// 11 
+// var js_object = members.map((obj) => {
+//     obj["testname"] = obj["name"]
+//     delete obj["name"]
+// })
+// console.log(js_object)
+
+// 12 
+console.log(_.map(memberss, ({ name: testname, age }) => ({ age, testname })));
